@@ -1,1 +1,216 @@
+Hier ist ein moderner, schicker One-Pager für dein Unternehmen. Da ihr eine Art "Agentur" seid, aber ausschließlich an eigenen Projekten arbeitet, habe ich das Konzept als "Independent Digital Studio" oder "Digital Lab" aufgezogen. Das erklärt Besuchern sofort, warum ihr keine klassischen Kundenaufträge annehmt, aber dennoch professionelle Produkte (wie Shopware Plugins) anbietet.
 
+Der Code nutzt das Tailwind CSS CDN und ist vollständig responsiv (sieht also auf dem Handy und auf dem Desktop gut aus).
+
+Kopiere einfach den folgenden Code in eine Datei namens index.html und öffne sie in deinem Browser:
+
+code
+Html
+play_circle
+download
+content_copy
+expand_less
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FW Marketing | Independent Digital Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ein paar kleine Custom-Anpassungen für sanfte Übergänge */
+        .fade-in { animation: fadeIn 1.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-2xl tracking-tighter text-blue-600">FW<span class="text-slate-900">Marketing</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Über uns</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projekte & Plugins</a>
+                    <a href="#impressum" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <span class="text-blue-600 font-semibold tracking-wide uppercase text-sm border border-blue-200 bg-blue-50 rounded-full px-4 py-1">Independent Digital Lab</span>
+            <h1 class="mt-6 text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                Wir bauen digitale Produkte <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">aus eigener Überzeugung.</span>
+            </h1>
+            <p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto">
+                FW Marketing ist eine digitale Schmiede für E-Commerce und Online-Projekte. 
+                Keine klassischen Kundenaufträge. Kein Agentur-Alltag. Wir fokussieren uns zu 100 % auf unsere eigenen Visionen und Lösungen.
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#projects" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/30">
+                    Unsere Produkte entdecken
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Philosophy Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Unsere Philosophie: <br>Unabhängigkeit trifft Innovation</h2>
+                    <p class="text-slate-600 mb-4 text-lg">
+                        Obwohl wir das Know-how einer Full-Service-Online-Agentur besitzen, haben wir uns bewusst gegen das klassische Dienstleistungsgeschäft entschieden. 
+                        <strong>Wir haben keine Kundenprojekte und suchen auch keine.</strong>
+                    </p>
+                    <p class="text-slate-600 text-lg">
+                        Stattdessen nutzen wir unsere Ressourcen, um eigene E-Commerce-Plattformen zu skalieren und Software-Lösungen zu entwickeln, die wir dem Markt als fertige Produkte zur Verfügung stellen. Das gibt uns die absolute Freiheit, Projekte perfekt und ohne Kompromisse umzusetzen.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 mb-2">In-House Coding</h3>
+                        <p class="text-slate-500 text-sm">Entwicklung nach höchsten Standards, ohne externe Abhängigkeiten.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 mt-8">
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 mb-2">E-Commerce First</h3>
+                        <p class="text-slate-500 text-sm">Tiefes Verständnis für Online-Handel und Conversion-Optimierung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Plugins Section -->
+    <section id="projects" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Was wir entwickeln</h2>
+                <p class="text-slate-400 text-lg">Vom eigenen Online-Portal bis hin zu professionellen Software-Erweiterungen für den E-Commerce-Markt.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Shopware Plugins Card -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-blue-500 transition-colors">
+                    <div class="bg-blue-600/20 text-blue-400 w-max px-3 py-1 rounded-full text-sm font-semibold mb-6">Software & Tools</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Shopware 6 Plugins</h3>
+                    <p class="text-slate-300 mb-6">
+                        Wir entwickeln, veröffentlichen und warten hochwertige Plugins für Shopware 6. Unsere Lösungen entstehen aus realen Anforderungen unserer eigenen E-Commerce-Projekte und werden als zuverlässige Erweiterungen im Shopware Store angeboten.
+                    </p>
+                    <ul class="space-y-3 text-slate-400">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Kontinuierliche Maintenance & Updates</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Höchste Code-Qualität</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Performance-optimiert</li>
+                    </ul>
+                </div>
+
+                <!-- Web Projects Card -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-indigo-500 transition-colors">
+                    <div class="bg-indigo-600/20 text-indigo-400 w-max px-3 py-1 rounded-full text-sm font-semibold mb-6">E-Commerce Portale</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Rabatthero.de</h3>
+                    <p class="text-slate-300 mb-6">
+                        Als Betreiber eigener Online-Portale wissen wir genau, worauf es im digitalen Handel ankommt. <strong>Rabatthero.de</strong> ist eines unserer erfolgreichen In-House-Projekte, bei dem wir modernste Webtechnologien mit smartem Affiliate- und E-Commerce-Marketing verbinden.
+                    </p>
+                    <a href="https://www.rabatthero.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold transition-colors">
+                        Zu Rabatthero.de 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impressum / Footer -->
+    <footer id="impressum" class="bg-slate-100 pt-20 pb-10 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Impressum</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm text-slate-600">
+                    
+                    <!-- Adresse -->
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-3 uppercase tracking-wider text-xs">Angaben gemäß § 5 TMG</h3>
+                        <p>
+                            <strong>FW Marketing LTD</strong><br>
+                            Anoixis 1<br>
+                            7040 Oroklini<br>
+                            Zypern
+                        </p>
+                        <p class="mt-4">
+                            <strong>Vertretungsberechtigter Director:</strong><br>
+                            Sebastian Walker
+                        </p>
+                    </div>
+
+                    <!-- Kontakt -->
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-3 uppercase tracking-wider text-xs">Kontakt</h3>
+                        <p>
+                            E-Mail: <a href="mailto:office@rabatthero.de" class="text-blue-600 hover:underline">office@rabatthero.de</a><br>
+                            Telefon: <a href="tel:+4930577131040" class="text-blue-600 hover:underline">+49 30 577131040</a>
+                        </p>
+                    </div>
+
+                    <!-- Register -->
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-3 uppercase tracking-wider text-xs">Registereintrag</h3>
+                        <p>
+                            Eingetragen im Handelsregister von Zypern<br>
+                            Cyprus Registrar of Companies<br>
+                            <strong>Registernummer:</strong> HE 381648
+                        </p>
+                        <p class="mt-4">
+                            <strong>Umsatzsteuer-ID gemäß § 27a UStG:</strong><br>
+                            CY10381648M
+                        </p>
+                    </div>
+
+                    <!-- V.i.S.d.P -->
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-3 uppercase tracking-wider text-xs">Verantwortlich für den Inhalt</h3>
+                        <p>
+                            nach § 18 Abs. 2 MStV:<br><br>
+                            <strong>Sebastian Walker</strong><br>
+                            Anoixis 1<br>
+                            7040 Oroklini<br>
+                            Zypern
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="border-t border-slate-300 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2024 FW Marketing LTD. Alle Rechte vorbehalten.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <span>Independent Digital Studio</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+Was dieses Design besonders macht:
+
+Das Wording: Anstatt euch als klassische Agentur zu verkaufen, die verzweifelt nach Kunden sucht, werdet ihr als autarkes "Independent Digital Lab" positioniert. Der Text ("Wir haben keine Kundenprojekte und suchen auch keine") macht eure exklusive und unabhängige Arbeitsweise klar und lässt euch als Macher dastehen.
+
+Shopware & Rabatthero: Die Kernaspekte (eigene E-Commerce-Projekte und Shopware 6 Plugin-Entwicklung + Maintenance) haben eine eigene elegante Sektion bekommen.
+
+Rechtliche Absicherung: Das Impressum ist im Footer extrem sauber und exakt mit den von dir vorgegebenen Daten formatiert aufgebaut (nach TMG, V.i.S.d.P. etc.).
+
+TailwindCSS: Dank moderner Utility-Klassen und einem dezenten Farbschema (Slate, Blau, Indigo) wirkt die Seite sehr professionell und zeitgemäß.
